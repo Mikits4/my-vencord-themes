@@ -1,0 +1,144 @@
+#app-mount :where(::-webkit-input-placeholder,
+    body,
+    button,
+    input,
+    select,
+    textarea,
+    *) {
+    font-family: var(--cf);
+}
+
+:root {
+    --cf: "Courier New";
+}
+
+/* Sidebar cats */
+.user-profile-sidebar::after {
+    /* a cat */
+    content: "   /￣ヽ\a"
+        " ∠)_・/ ∧_∧ \a"
+        "   / / ( ･ω･)\a"
+        "  (   ￣∪∪￣)\a"
+        "  ~~~~~~~~~~~~";
+
+    white-space: pre;
+    padding: 20px;
+    padding-left: 110px;
+    color: rgb(189, 145, 243);
+}
+
+.members_c8ffbb::after {
+    content: "                            \a"
+        "                     /\\    .-`\\\a"
+        "                    /  ; .`  .` \a"
+        "                   :   :/  .'   \a"
+        "                    \\  ;-.'     \a"
+        "       .--` ``` `--..__/   `.  \a"
+        "     .'           .`    `o   \\   \a"
+        "    /                    `    ;  \a"
+        "   :                  \\       :  \a"
+        " .-;         -.        `.__.-`  \a"
+        ":  ;           \\     ,   ;       \a"
+        "'._:            ;   :   (        \a"
+        "    \\/  .__     ;    \\   `-.     \a"
+        "     ;     ` -, /_..--``-..__)  \a"
+        "     ``''--.._: \A";
+    white-space: pre;
+    width: 100px;
+    padding-left: 100px;
+    color: rgb(28, 83, 65);
+    font-size: 80%;
+}
+
+/* title */
+.backForwardButtons__63abb {
+    display: none;
+}
+
+.leading_c38106::after {
+    content:
+        "hi";
+    z-index: 1;
+}
+
+/* avatar */
+:root {
+    border-radius: 0px;
+}
+
+.mask__68edb>foreignObject,
+.svg__44b0c>foreignObject,
+.svg__2338f>foreignObject {
+    mask: none;
+}
+
+.avatar_c19a55 {
+    border-radius: 0 !important;
+}
+
+.wrapper_da5890 {
+    mask: none;
+}
+
+/* dm */
+.scroller__36d07 {
+    padding-left: 15px;
+}
+
+.message__5126c {
+    border-radius: 10px;
+}
+
+/*8008135*/
+
+.titleWrapper__9293f::after {
+    content:
+        "likes 8008135";
+}
+
+/*toolbar*/
+
+.toolbar__9293f {
+    background-color: #20574550;
+    padding-left: 5px !important;
+    border-radius: 10px;
+
+}
+
+/* server list */
+
+.childContainer__91a9d {
+    background-color: #20574550;
+}
+
+:root {
+    /* --custom-theme-base-color: #00644b;
+    --custom-theme-base-color-hsl: 300 70% 20%;
+    --custom-theme-base-color-amount: 50%;*/
+    --custom-theme-text-color: #68c7ff;
+    --custom-theme-text-color-amount: 10%;
+
+    --text-link: #75c8ff !important;
+}
+
+.theme-light,
+.theme-dark,
+.theme-darker,
+.theme-darkest {
+    --background-accent: rgb(197, 114, 128);
+    --background-base-low: rgb(8, 88, 64);
+    --background-base-lower: rgb(7, 56, 29);
+    --background-base-lowest: rgb(4, 73, 46);
+    --background-secondary: rgb(100, 14, 14);
+    --background-secondary-alt: rgb(97, 169, 172);
+
+    --background-surface-high: rgb(15, 90, 61);
+    --background-surface-higher: rgb(20, 126, 94);
+    --background-surface-highest: rgb(40, 104, 78);
+
+    --chat-background-default: rgb(9, 80, 50);
+    --user-profile-overlay-background: rgb(31, 124, 85);
+
+    --card-primary-bg: rgb(102, 170, 167);
+    --bg-surface-raised: rgb(42, 148, 116);
+}
