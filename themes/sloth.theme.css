@@ -1,3 +1,11 @@
+/**
+ * @name Sloth City
+ * @author Mikits
+ * @description when i feel like chagning something randomly, i change it
+ * @website https://github.com/Mikits4/my-vencord-themes
+ * @version 0.2
+*/
+
 #app-mount :where(::-webkit-input-placeholder,
     body,
     button,
@@ -68,11 +76,15 @@
 
 .mask__68edb>foreignObject,
 .svg__44b0c>foreignObject,
-.svg__2338f>foreignObject {
+.svg__2338f>foreignObject,
+.svg_cc5dd2>foreignObject,
+svg_cc5dd2>foreignObject {
     mask: none;
 }
 
-.avatar_c19a55 {
+.avatar_c19a55,
+.svg_cc5dd2,
+.wrapper__6e9f8 {
     border-radius: 0 !important;
 }
 
@@ -101,15 +113,67 @@
 .toolbar__9293f {
     background-color: #20574550;
     padding-left: 5px !important;
-    border-radius: 10px;
-
 }
 
 /* server list */
 
-.childContainer__91a9d {
-    background-color: #20574550;
+.tree_ef3116 {
+    background-color: #06351f50;
 }
+
+/* squarify */
+.overlay_c0bea0,
+.channel__972a0,
+.childContainer__91a9d,
+.link__2ea32,
+.jumpToPresentBar__0f481,
+.button_a22cb0,
+.panels_c48ade,
+.button_e131a9,
+.channelTextArea_f75fb0,
+.searchBar__97492,
+.button__201d5 {
+    border-radius: 3px;
+}
+
+
+.usernameRow__63ed3,
+.tags__63ed3 {
+    margin-left: 5px;
+}
+
+.panels_c48ade {
+    width: 99%;
+}
+
+.form_f75fb0 {
+    padding: 5px;
+}
+
+.channelTextArea_f75fb0 {
+    margin: 0;
+}
+
+.button_e131a9 {
+    width: 110%;
+}
+
+.container_e131a9 {
+    padding-left: 4px;
+}
+
+.body_b32ca4 {
+    margin: 0;
+    gap: 0;
+}
+
+.overlay_c0bea0 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* background colours */
 
 :root {
     /* --custom-theme-base-color: #00644b;
@@ -119,18 +183,30 @@
     --custom-theme-text-color-amount: 10%;
 
     --text-link: #75c8ff !important;
+
+
+    --radius-none: 4px;
+    --radius-xs: 4px;
+    --radius-sm: 4px;
+    --radius-md: 4px;
+    --radius-lg: 4px;
+    --radius-xl: 4px;
+    --radius-xxl: 4px;
+    --radius-round: 2147483647px;
 }
 
 .theme-light,
 .theme-dark,
 .theme-darker,
 .theme-darkest {
-    --background-accent: rgb(197, 114, 128);
+    /* main colours */
     --background-base-low: rgb(8, 88, 64);
     --background-base-lower: rgb(7, 56, 29);
     --background-base-lowest: rgb(4, 73, 46);
-    --background-secondary: rgb(100, 14, 14);
-    --background-secondary-alt: rgb(97, 169, 172);
+
+    /* less common colours */
+    --background-secondary: rgb(100, 14, 71);
+    --background-secondary-alt: rgb(78, 143, 132);
 
     --background-surface-high: rgb(15, 90, 61);
     --background-surface-higher: rgb(20, 126, 94);
@@ -138,7 +214,18 @@
 
     --chat-background-default: rgb(9, 80, 50);
     --user-profile-overlay-background: rgb(31, 124, 85);
-
     --card-primary-bg: rgb(102, 170, 167);
     --bg-surface-raised: rgb(42, 148, 116);
+    --control-background-primary-default: rgb(20, 172, 126);
+
+    --scrollbar-thin-thumb: rgb(8, 112, 86);
+
+    /* text colour */
+    --channels-default: rgb(111, 204, 192);
+    --text-primary: rgb(152, 255, 246);
+    --text-secondary: rgb(91, 170, 160);
+    --text-tertiary: rgb(21, 139, 124);
+
+    /* less common text colours */
+    --text-muted: rgb(40, 104, 88);
 }
