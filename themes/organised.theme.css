@@ -1,9 +1,9 @@
 /**
- * @name Sloth City
+ * @name Organised
  * @author Mikits
- * @description when i feel like chagning something randomly, i change it
+ * @description very organised
  * @website https://github.com/Mikits4/my-vencord-themes
- * @version 0.2
+ * @version 0.3
 */
 
 #app-mount :where(::-webkit-input-placeholder,
@@ -56,6 +56,17 @@
     padding-left: 100px;
     color: rgb(28, 83, 65);
     font-size: 80%;
+}
+
+/* densify */
+.density-default {
+    --space-xxs: 4px;
+    --space-xs: 4px;
+    --space-sm: 4px;
+    --space-md: 8px;
+    /* --space-lg: 8px;
+    --space-xl: 8px;
+    --space-xxl: 8px; */
 }
 
 /* title */
@@ -121,7 +132,24 @@ svg_cc5dd2>foreignObject {
     background-color: #06351f50;
 }
 
-/* squarify */
+/* remove scrollbar */
+.scroller__99e7c {
+    overflow: hidden !important;
+}
+
+/* disable friends and nitro and shop button */
+
+.sectionDivider__35e86 {
+    display: none;
+}
+
+a[data-list-item-id*="friends"],
+a[data-list-item-id*="nitro"],
+a[data-list-item-id*="shop"] {
+    display: none !important;
+}
+
+/* squareify */
 .overlay_c0bea0,
 .channel__972a0,
 .childContainer__91a9d,
@@ -137,9 +165,14 @@ svg_cc5dd2>foreignObject {
 }
 
 
+.channel__972a0 {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
 .usernameRow__63ed3,
 .tags__63ed3 {
-    margin-left: 5px;
+    margin-left: 16px;
 }
 
 .panels_c48ade {
@@ -147,7 +180,7 @@ svg_cc5dd2>foreignObject {
 }
 
 .form_f75fb0 {
-    padding: 5px;
+    padding: 4px;
 }
 
 .channelTextArea_f75fb0 {
@@ -168,7 +201,7 @@ svg_cc5dd2>foreignObject {
 }
 
 .overlay_c0bea0 {
-    margin-top: 5px;
+    margin-top: 3px;
     margin-left: 5px;
     margin-right: 5px;
 }
