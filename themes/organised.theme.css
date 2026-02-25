@@ -88,8 +88,7 @@
 .mask__68edb>foreignObject,
 .svg__44b0c>foreignObject,
 .svg__2338f>foreignObject,
-.svg_cc5dd2>foreignObject,
-svg_cc5dd2>foreignObject {
+.svg_cc5dd2>foreignObject{
     mask: none;
 }
 
@@ -133,8 +132,8 @@ svg_cc5dd2>foreignObject {
 }
 
 /* remove scrollbar */
-.scroller__99e7c {
-    overflow: hidden !important;
+.scroller__99e7c::-webkit-scrollbar {
+  display: none;
 }
 
 /* disable friends and nitro and shop button */
@@ -233,20 +232,20 @@ a[data-list-item-id*="shop"] {
 .theme-darker,
 .theme-darkest {
     /* main colours */
-    --background-base-low: rgb(8, 88, 64);
-    --background-base-lower: rgb(7, 56, 29);
-    --background-base-lowest: rgb(4, 73, 46);
+    --background-base-low: rgb(10, 80, 62);
+    --background-base-lower: rgb(7, 54, 44);
+    --background-base-lowest: rgb(16, 75, 57);
 
     /* less common colours */
     --background-secondary: rgb(100, 14, 71);
     --background-secondary-alt: rgb(78, 143, 132);
 
-    --background-surface-high: rgb(15, 90, 61);
+    --background-surface-high: rgb(11, 68, 56);
     --background-surface-higher: rgb(20, 126, 94);
     --background-surface-highest: rgb(40, 104, 78);
 
-    --chat-background-default: rgb(9, 80, 50);
-    --user-profile-overlay-background: rgb(31, 124, 85);
+    --chat-background-default: rgb(6, 70, 61);
+    --user-profile-overlay-background: rgb(10, 95, 77);
     --card-primary-bg: rgb(102, 170, 167);
     --bg-surface-raised: rgb(42, 148, 116);
     --control-background-primary-default: rgb(20, 172, 126);
