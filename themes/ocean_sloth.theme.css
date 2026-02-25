@@ -259,5 +259,5 @@ a[data-list-item-id*="shop"] {
     --text-tertiary: rgb(21, 139, 124);
 
     /* less common text colours */
-    --text-muted: rgb(40, 104, 88);
+    --text-muted: rgb(68, 136, 119);
 }
